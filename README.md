@@ -16,25 +16,33 @@ git clone https://github.com/cabelow/django_GoldenRaspberryAwards.git
 cd django_GoldenRaspberryAwards
 ```
 
+## Comandos Docker
 
-Comandos Docker:
-para instalar as libs antes de rodar o projeto
+### Instalando dependências antes de rodar o projeto:
+```bash
 sudo docker-compose run web pip install -r requirements.txt
-para rodar o projeto:
+```
+
+### Rodando o projeto:
+```bash
 sudo docker-compose build
 sudo docker-compose up
+```
+Ou combine os passos:
+```bash
 sudo docker-compose up --build
-para rodar migrante se necessario:
+```
+
+### Rodando migrações, se necessário:
+```bash
 docker-compose run web python manage.py migrate
-
-
+```
 
 ## Instalação do Python
 
 Para rodar o projeto localmente fora do Docker, você precisará ter o Python 3.x instalado em sua máquina. Recomenda-se a versão **Python 3.11** ou superior. Siga as instruções abaixo para instalar o Python:
 
-alguns comandos para ajudar com o Python para ubuntu:
-
+### Comandos para ajudar com o Python no Ubuntu:
 ```bash
 sudo apt update
 sudo apt install python3
@@ -42,28 +50,37 @@ python3 --version
 sudo apt install python3-pip
 ```
 
-Instalando as dependencias do projeto:
+### Instalando as dependências do projeto:
+```bash
 pip install -r requirements.txt
+```
 
+## Executando Testes
 
-Depois de tudo instalado você pode:
-
-rodar os testes:
+Para rodar os testes:
+```bash
 python3 -m pytest
+```
 
+## Acessando o Admin do Django
 
-Para acessar o Admin do Django:
-http://0.0.0.0:8000/admin/
-django_admin: Golden_Raspberry
-senha: Golden_Raspberry
+URL: [http://0.0.0.0:8000/admin/](http://0.0.0.0:8000/admin/)
 
-Para usar o Postman login
-user_auth:Raspberry
-senha: Wyyk@PGiQCewCT9
-tem um arquivo chamado "GoldenRaspberryAwards.postman_collection.json"
-nele contem a collection do Postman para uso
+Credenciais de acesso:
+- **Usuário**: Golden_Raspberry
+- **Senha**: Golden_Raspberry
 
-para acessar a documentação:
-http://0.0.0.0:8000/swagger/
+## Usando o Postman
 
-qualquer duvida fico a disposição.
+Para autenticação no Postman:
+- **Usuário**: Raspberry
+- **Senha**: Wyyk@PGiQCewCT9
+
+Há um arquivo chamado `GoldenRaspberryAwards.postman_collection.json` que contém a coleção do Postman para facilitar o uso da API.
+
+## Documentação da API
+
+A documentação Swagger está disponível em:
+[http://0.0.0.0:8000/swagger/](http://0.0.0.0:8000/swagger/)
+
+Qualquer dúvida, fico à disposição.
