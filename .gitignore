@@ -1,0 +1,78 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.dylib
+*.egg
+*.egg-info
+dist/
+build/
+*.manifest
+*.spec
+*.env
+.env/
+venv/
+ENV/
+*.venv
+*.envrc
+
+# Django
+*.log
+*.pot
+*.mo
+*.swp
+*.swo
+db.sqlite3
+db.sqlite3-journal
+/static/
+media/
+local_settings.py
+settings.py
+__init__.py
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Linux
+*~
+
+# Docker
+*.dockerfile
+docker-compose.override.yml
+docker-compose.yml
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Test
+coverage/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+*.log
+.tox/
+.unittest/
+.pytest_cache/
+
+# Temporary files
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# System files
+Desktop.ini
