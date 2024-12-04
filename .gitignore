@@ -49,9 +49,6 @@ ehthumbs.db
 *~
 
 # Docker
-*.dockerfile
-docker-compose.override.yml
-docker-compose.yml
 *.log
 
 # Jupyter Notebook
