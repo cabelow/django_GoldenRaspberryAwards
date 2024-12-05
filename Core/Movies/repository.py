@@ -126,8 +126,10 @@ class MovieRepository:
                 .values('producer__name')
                 .annotate(
                     min_year=Min('year'),
-                    max_year=Max('year')
+                    max_year=Max('year'),
+                    count=Count('id')
                 )
+                .filter(count__gte=2)
                 .order_by('-max_year', 'min_year')
             )
             producers_with_intervals_list = []
